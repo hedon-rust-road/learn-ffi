@@ -97,7 +97,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+**dist
 
 # Gatsby files
 .cache/
@@ -118,10 +118,10 @@ dist
 .dynamodb/
 
 # TernJS port file
-.tern-port
+**.tern-port
 
 # Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+**.vscode-test
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
@@ -129,11 +129,10 @@ dist
 #Added by cargo
 
 /target
-Cargo.lock
 
 *.node
-.pnp.*
-.yarn/*
+**.pnp.*
+**.yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
