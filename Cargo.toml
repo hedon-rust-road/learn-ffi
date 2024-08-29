@@ -1,3 +1,9 @@
 [workspace]
-members = ["node-binding"]
+members = ["algo", "node-binding"]
 resolver = "2"
+
+[workspace.dependencies]
+algo = { path = "algo" }
+node-binding = { path = "node-binding" }
+napi = { version = "2", no-default-features = true, features = ["full"] }
+napi-derive = "2"
