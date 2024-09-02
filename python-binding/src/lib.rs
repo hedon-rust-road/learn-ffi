@@ -1,3 +1,5 @@
+mod hasher;
+
 use pyo3::prelude::*;
 
 /// Prints a message.
@@ -8,7 +10,7 @@ fn hello() -> PyResult<String> {
 
 /// A Python module implemented in Rust.
 #[pymodule]
-fn _lowlevel(_py: Python, m: &PyModule) -> PyResult<()> {
+fn _lowlevel(_py: Python, m: &Bound<'_, PyModule>) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(hello, m)?)?;
     Ok(())
 }
