@@ -477,6 +477,7 @@ dependencies = [
 name = "python-binding"
 version = "0.1.0"
 dependencies = [
+ "algo",
  "pyo3",
 ]
 
