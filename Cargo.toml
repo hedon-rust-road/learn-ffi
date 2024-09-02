@@ -1,5 +1,5 @@
 [workspace]
-members = ["algo", "node-binding", "python-binding"]
+members = ["algo", "learn-roaring-bitmap", "node-binding", "python-binding"]
 resolver = "2"
 
 [workspace.dependencies]
@@ -7,6 +7,8 @@ algo = { path = "algo" }
 node-binding = { path = "node-binding" }
 napi = { version = "2", no-default-features = true, features = ["full"] }
 napi-derive = "2"
+roaring = "0.10.6"
+roaring_bitmap = "0.1.3"
 
 
 [profile.release]

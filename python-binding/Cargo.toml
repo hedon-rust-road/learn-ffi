@@ -11,3 +11,5 @@ crate-type = ["cdylib"]
 [dependencies]
 algo = { workspace = true }
 pyo3 = { version = "0.22.0", features = ["extension-module"] }
+roaring = { workspace = true }
+roaring_bitmap = { workspace = true }

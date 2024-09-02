@@ -1,0 +1,8 @@
+[package]
+name = "learn-roaring-bitmap"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+roaring = "0.10.6"
+roaring_bitmap = "0.1.3"
